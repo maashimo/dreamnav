@@ -1,59 +1,71 @@
 /* style.css */
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', sans-serif;
     background-image: url('assets/travel-bg.png');
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    color: #333;
+    color: #333333; /* Deep Charcoal */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   header {
-    background-color: rgba(44, 62, 80, 0.8);
-    color: white;
+    background-color: #1B1F3B; /* Midnight Blue */
+    color: #F5F5F5; /* Warm Gray */
     padding: 1rem 0;
     text-align: center;
   }
   
   nav {
-    background-color: rgba(52, 73, 94, 0.8);
+    background-color: #5ED0C6; /* Soft Aqua */
     text-align: center;
   }
   
   nav a {
-    color: white;
+    color: #1B1F3B; /* Midnight Blue */
     text-decoration: none;
     padding: 1rem;
     display: inline-block;
-    transition: background 0.3s;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
   }
   
   nav a:hover {
-    background-color: #1abc9c;
+    background-color: #1B1F3B; /* Midnight Blue */
+    color: #F5F5F5; /* Warm Gray */
   }
   
   .container {
+    flex: 1;
     padding: 2rem;
     max-width: 900px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(245, 245, 245, 0.9); /* Warm Gray with opacity */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
+    color: #333333; /* Deep Charcoal */
   }
   
   footer {
     text-align: center;
     padding: 1rem;
-    background-color: rgba(44, 62, 80, 0.8);
-    color: white;
-    margin-top: 2rem;
+    background-color: #1B1F3B; /* Midnight Blue */
+    color: #F5F5F5; /* Warm Gray */
+    margin-top: auto;
+    width: 100%;
   }
   
   h1, h2 {
-    color: #2c3e50;
+    color: #1B1F3B; /* Midnight Blue */
   }
   
