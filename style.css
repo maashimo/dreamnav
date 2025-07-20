@@ -21,7 +21,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(to right, #5ED0C6, #191970);
+    background: linear-gradient(to right,#191970, #5ED0C6);
     height: 60px;
     display: flex;
     align-items: center;
