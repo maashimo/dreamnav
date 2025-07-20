@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: (#ffffff);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #333333;
   line-height: 1.6;
   padding-top: 60px; /* for fixed navbar */
   min-height: 100vh;
@@ -21,14 +21,14 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right,#191970, #5ED0C6);
+  background: linear-gradient(to right, #191970, #5ED0C6);
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav .logo {
@@ -93,7 +93,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 0 1rem;
-  color: (#191970);
+  color: #191970;
   user-select: none;
   background-size: cover;
   background-position: center center;
@@ -159,13 +159,13 @@ section p {
   background: white;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   text-align: left;
 }
 
 .card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -180,9 +180,8 @@ section p {
 }
 
 /* Features page specific styles */
-
 .features-header {
-  background: linear-gradient(to right,#191970, #5ED0C6);
+  background: linear-gradient(to right, #191970, #5ED0C6);
   color: white;
   padding: 3rem 1rem;
   text-align: center;
@@ -223,20 +222,20 @@ section p {
   background: white;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   text-align: center;
 }
 
 .feature-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .feature-icon {
   width: 48px;
   height: 48px;
   margin-bottom: 1rem;
-  stroke:#191970;
+  stroke: #191970;
   fill: none;
   stroke-width: 2;
 }
@@ -283,7 +282,7 @@ form textarea {
 
 form button {
   background-color: #191970;
-  color: rgb(12, 6, 28);
+  color: #ffffff;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -295,17 +294,21 @@ form button {
 form button:hover {
   background-color: #333333;
 }
+
+/* Slogan Highlight */
 .slogan-highlight {
   text-align: center;
-  background-color: #5ED0C6; /* Soft Aqua */
-  color: #1B1F3B; /* Midnight Blue */
+  background-color: #5ED0C6;
+  color: #1B1F3B;
   font-size: 1.8rem;
   padding: 20px;
   margin: 30px 0;
   font-weight: bold;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Leaflet Showcase Section */
 .leaflet-showcase {
   background-color: #f5f5f5;
   color: #1B1F3B;
@@ -322,16 +325,76 @@ form button:hover {
 .leaflet-showcase p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: #666;
+}
+
+.leaflet-image-container {
+  position: relative;
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leaflet-image-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .leaflet-image {
-  max-width: 90%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 31, 59, 0.7);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.leaflet-image-container:hover .leaflet-image-overlay {
+  opacity: 1;
+}
+
+.leaflet-image-caption {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  transform: translateY(20px);
   transition: transform 0.3s ease;
 }
 
-.leaflet-image:hover {
-  transform: scale(1.03);
+.leaflet-image-container:hover .leaflet-image-caption {
+  transform: translateY(0);
+}
+
+/* Download Button (for consistency with previous design) */
+.download-btn {
+  display: inline-block;
+  background-color: #5ED0C6;
+  color: #1B1F3B;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #4bbdb3;
 }
