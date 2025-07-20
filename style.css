@@ -7,7 +7,7 @@
   }
   
   body {
-    background-color: (#1B1F3B);
+    background-color: (#191970);
     color: #333;
     line-height: 1.6;
     padding-top: 60px; /* for fixed navbar */
@@ -21,7 +21,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(to right, #5ED0C6, #1B1F3B);
+    background: linear-gradient(to right, #5ED0C6, #191970);
     height: 60px;
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@
     align-items: center;
     text-align: center;
     padding: 0 1rem;
-    color: (#1B1F3B);
+    color: (#191970);
     user-select: none;
     background-size: cover;
     background-position: center center;
@@ -171,7 +171,7 @@
   .card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: #1B1F3B;
+    color: #191970;
   }
   
   .card p {
@@ -182,7 +182,7 @@
   /* Features page specific styles */
   
   .features-header {
-    background: linear-gradient(to right, #5ED0C6, #1B1F3B);
+    background: linear-gradient(to right, #5ED0C6, #191970);
     color: white;
     padding: 3rem 1rem;
     text-align: center;
@@ -236,7 +236,7 @@
     width: 48px;
     height: 48px;
     margin-bottom: 1rem;
-    stroke:#1B1F3B;
+    stroke:#191970;
     fill: none;
     stroke-width: 2;
   }
@@ -245,7 +245,7 @@
   .feature-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: #1B1F3B;
+    color: #191970;
   }
   
   /* Feature descriptions */
@@ -282,7 +282,7 @@
   }
   
   form button {
-    background-color: #1B1F3B;
+    background-color: #191970;
     color: rgb(12, 6, 28);
     border: none;
     padding: 0.75rem 1.5rem;
@@ -293,6 +293,6 @@
   }
   
   form button:hover {
-    background-color: #1B1F3B;
+    background-color: #191970;
   }
   
