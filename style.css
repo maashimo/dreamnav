@@ -3,7 +3,8 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-image: url('travel-bg.png');
+    background-image: url('assets/travel-bg.png');
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
