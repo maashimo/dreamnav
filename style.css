@@ -21,7 +21,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(to right, #4b0082, #800080);
+    background: linear-gradient(to right, #5ED0C6, #1B1F3B);
     height: 60px;
     display: flex;
     align-items: center;
@@ -171,7 +171,7 @@
   .card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: #4b0082;
+    color: #5ED0C6;
   }
   
   .card p {
@@ -182,7 +182,7 @@
   /* Features page specific styles */
   
   .features-header {
-    background: linear-gradient(to right, #4b0082, #800080);
+    background: linear-gradient(to right, #5ED0C6, #1B1F3B);
     color: white;
     padding: 3rem 1rem;
     text-align: center;
@@ -236,7 +236,7 @@
     width: 48px;
     height: 48px;
     margin-bottom: 1rem;
-    stroke: #4b0082;
+    stroke: #5ED0C6;
     fill: none;
     stroke-width: 2;
   }
@@ -245,7 +245,7 @@
   .feature-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: #4b0082;
+    color: #5ED0C6;
   }
   
   /* Feature descriptions */
@@ -282,7 +282,7 @@
   }
   
   form button {
-    background-color: #4b0082;
+    background-color: #5ED0C6;
     color: rgb(12, 6, 28);
     border: none;
     padding: 0.75rem 1.5rem;
@@ -293,6 +293,6 @@
   }
   
   form button:hover {
-    background-color: #800080;
+    background-color: #1B1F3B;
   }
   
