@@ -294,3 +294,14 @@ form button {
 form button:hover {
   background-color: #333333;
 }
+.slogan-highlight {
+  text-align: center;
+  background-color: #5ED0C6; /* Soft Aqua */
+  color: #1B1F3B; /* Midnight Blue */
+  font-size: 1.8rem;
+  padding: 20px;
+  margin: 30px 0;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
