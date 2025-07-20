@@ -182,7 +182,7 @@
   /* Features page specific styles */
   
   .features-header {
-    background: linear-gradient(to right, #5ED0C6, #191970);
+    background: linear-gradient(to right,#191970, #5ED0C6);
     color: white;
     padding: 3rem 1rem;
     text-align: center;
