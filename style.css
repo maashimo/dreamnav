@@ -1,82 +1,70 @@
+/* General Page Styles */
 body {
-    margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
     color: #333;
   }
   
   header {
-    background-color: #081c24;
-    color: white;
-    padding: 20px 0;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .hero {
-    background: url('images/travel-bg.jpg') center/cover no-repeat;
-    color: white;
-    padding: 100px 20px;
+    background-color: #dfe6e9;
+    padding: 1rem;
     text-align: center;
-  }
-  
-  .hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #ff5722;
-    color: white;
-    padding: 12px 25px;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-  }
-  
-  .benefits, .features-page, .contact {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .benefits h3, .features-page h2, .contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .benefits ul, .features-page ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .benefits li, .features-page li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
   }
   
   footer {
-    background-color: #081c24;
-    color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
+    padding: 1rem;
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #e0e4eb;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #2f3640;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  nav a:hover {
+    color: #0097e6;
+  }
+  
+  /* About Page */
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Features Page */
+  .features {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .feature-card {
+    background-color: #ffffff;
+    border-left: 6px solid #0097e6;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   }
   
