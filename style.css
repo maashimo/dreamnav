@@ -171,7 +171,7 @@
   .card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: #5ED0C6;
+    color: #1B1F3B;
   }
   
   .card p {
@@ -236,7 +236,7 @@
     width: 48px;
     height: 48px;
     margin-bottom: 1rem;
-    stroke: #5ED0C6;
+    stroke:#1B1F3B;
     fill: none;
     stroke-width: 2;
   }
@@ -245,7 +245,7 @@
   .feature-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: #5ED0C6;
+    color: #1B1F3B;
   }
   
   /* Feature descriptions */
@@ -282,7 +282,7 @@
   }
   
   form button {
-    background-color: #5ED0C6;
+    background-color: #1B1F3B;
     color: rgb(12, 6, 28);
     border: none;
     padding: 0.75rem 1.5rem;
