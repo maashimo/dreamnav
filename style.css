@@ -1,298 +1,162 @@
 /* Reset and base */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background-color: (#191970);
-    color: #ffffff;
-    line-height: 1.6;
-    padding-top: 60px; /* for fixed navbar */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Navbar */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1B1F3B;
+  color: #ffffff;
+  line-height: 1.6;
+  padding-top: 60px; /* for fixed navbar */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #1B1F3B, #5ED0C6);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  user-select: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #F5F5F5;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
   nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(to right,#191970, #5ED0C6);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  nav .logo {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-    user-select: none;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #e0b0ff;
-  }
-  
-  /* Responsive Navbar */
-  @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      height: auto;
-      padding: 1rem 2rem;
-    }
-    nav ul {
-      flex-direction: column;
-      width: 100%;
-      margin-top: 0.5rem;
-    }
-    nav ul li {
-      text-align: center;
-    }
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: auto;
-    user-select: none;
-  }
-  
-  /* Hero Sections */
-  .hero {
-    width: 100%;
-    height: 400px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-    color: (#191970);
-    user-select: none;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    height: auto;
+    padding: 1rem 2rem;
   }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 8px rgba(0,0,0,0.7);
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      height: 300px;
-    }
-    .hero h1 {
-      font-size: 2rem;
-    }
-    .hero p {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Sections Container */
-  section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  
-  /* Headings */
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #222;
-  }
-  
-  /* Paragraphs */
-  section p {
-    font-size: 1rem;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    color: #666;
-  }
-  
-  /* Cards - general style for about, features, contact info */
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-    text-align: left;
-  }
-  
-  .card:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }
-  
-  .card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    color: #191970;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* Features page specific styles */
-  
-  .features-header {
-    background: linear-gradient(to right,#191970, #5ED0C6);
-    color: white;
-    padding: 3rem 1rem;
-    text-align: center;
-    user-select: none;
-  }
-  
-  .features-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .features-header p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 768px) {
-    .features-header h1 {
-      font-size: 2rem;
-    }
-    .features-header p {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Features cards inside features.html */
-  .features-grid {
-    max-width: 900px;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-  
-  .feature-card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-    text-align: center;
-  }
-  
-  .feature-card:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }
-  
-  .feature-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 1rem;
-    stroke:#191970;
-    fill: none;
-    stroke-width: 2;
-  }
-  
-  /* Feature card titles */
-  .feature-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #191970;
-  }
-  
-  /* Feature descriptions */
-  .feature-card p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* Contact form styles */
-  form.contact-form {
-    max-width: 500px;
-    margin: 0 auto 2rem;
-    text-align: left;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
+  nav ul {
+    flex-direction: column;
     width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  nav ul li {
+    text-align: center;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  user-select: none;
+}
+
+/* Hero Sections */
+.hero {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: #1B1F3B;
+  user-select: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
     font-size: 1rem;
-    resize: vertical;
-    font-family: inherit;
   }
-  
-  form button {
-    background-color: #191970;
-    color: rgb(12, 6, 28);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  form button:hover {
-    background-color: #191970;
-  }
-  
+}
+
+/* Sections Container */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1B1F3B;
+}
+
+/* Paragraphs */
+section p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #666;
+}
+
+/* Cards - general style for about, features, contact info */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,
